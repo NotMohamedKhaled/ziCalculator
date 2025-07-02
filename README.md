@@ -1,4 +1,4 @@
-# CodeAlpha_Calculator
+# ziCalculator
  Dynamic button generation using JavaScript
  
  Responsive UI with CSS Grid and Flexbox
