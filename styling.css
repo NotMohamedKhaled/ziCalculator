@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    margin-top: 40px;
+    justify-self: center;
+    font-weight: 700;
+}
+.main{
+    background-color: rgb(63, 63, 63);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    /* border: solid 2px; */
+    padding: 1% 1%;
+    margin: 3% 37%;
+    border-radius: 10px;
+}
+.result{
+    background-color: rgb(221, 215, 208);
+    display: flex;
+    flex-direction: column;
+    flex: 0.2;
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    justify-content: space-between;
+    padding: 2% 0;
+    /* border: solid 1px; */
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.result-top{
+
+padding-top: 15px;
+padding-left: 5%;
+}
+.result-top p{
+    opacity: 0.6;
+}
+.result-bottom{
+    display: flex;
+    justify-content: end;  
+  padding-right: 5%;
+}
+
+.input-buttons {
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px;
+}
+.input-buttons button{
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(221, 215, 208);
+    color: black;
+}
+.input-buttons button:hover{
+    transform: scale(1.05);
+}
+.input-buttons button:active{
+    opacity: 0.7;
+}
+
+.input-buttons > .button:nth-child(1) {
+    background-color:rgb(177, 24, 24);
+    color: rgb(221, 215, 208);
+  grid-column: span 2; 
+}
+
+.input-buttons > .button:nth-last-child(1) {
+  background-color: green;
+      color: rgb(221, 215, 208);
+
+}
+.input-buttons .operator{
+    background-color: rgb(202, 157, 10);
+        color: rgb(221, 215, 208);
+
+}
+
+@media(max-width:1369px ){
+     p{
+        font-size: 28px;
+    }
+    .main{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px;
+    padding: 2% 1.5%;
+    margin: 10% 34%;
+}
+}
+@media(max-width:766px ){
+    p{
+        font-size: 25px;
+    }
+    .main{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px;
+    padding: 2% 2%;
+    margin: 19% 25%;
+}
+}
